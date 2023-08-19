@@ -2,83 +2,113 @@
 <html>
   <head> </head>
   <style>
-    /*
-    shape of button
-    */
-    .welcomeButton {
-      position: relative;
-      width: 100%;
-      max-width: 360px;
-      width: 360px;
-      height: 640px;
-      background-color: #FFBFB7;
-    }
-    /*
-    size of button
-    */
-    .welcomeButton {
-      width: 360px;
-      height: 800px;
-      background-color: FFBFB7;
-    }
-    /*
-    Placement of the button
-    */
-/*     .welcomeButton .btn {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    } */
-    /*
-    Colour of button block
-    */
-    .welcomeButton .btn:hover {
-      background-color: #FFC161;
-    }
-    
-    .btn{
-/*       customises shape */
-      width: 165px;
-      height: 51px;
-      flex-shrink: 0;
-      border-radius: 34.5px;
-      border: 5px solid #FFC161;
-      background: #FFE3B7;
-      font-size: 2em;
-      
-/*       customises font       */
-      color: #D84F4F;
+        /*
+        shape of button
+        */
+        .welcomePage {
+          position: relative;
+          width: 100%;
+          max-width: 360px;
+          width: 360px;
+          height: 640px;
+          background-color: #FFBFB7;
+/*           padding: 20px; */
+        }
+        /*
+        size of button
+        */
+        /*
+        Placement of the button
+        */
+    /*     .welcomeButton .btn {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        } */
+        /*
+        Colour of button block
+        */
+        .btn:hover {
+          background-color: #FFC161;
+        }
+
+        .btn{
+    /*       customises shape */
+          width: 165px;
+          height: 51px;
+          flex-shrink: 0;
+          border-radius: 34.5px;
+          border: 5px solid #FFC161;
+          background: #FFE3B7;
+          font-size: 2em;
+          
+
+    /*       customises font       */
+          color: #D84F4F;
+          text-align: center;
+          font-family: League Spartan;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin: 0;
+          transform: translateX(+55%);
+
+        }
+
+        @font-face{
+            font-family: 'League Spartan'; /* This is an arbitrary name -- whatever works for you */
+            src: url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-VariableFont_wght.ttf?v=1692417347502');
+                 url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-Regular.ttf?v=1692417420012') format('ttf'),
+          }
+
+          body{
+            font-family: 'League Spartan';
+          }
+        .ute{
+          width: 321px;
+          height: 236px;
+          padding: 20px;
+          padding-top: 60px;
+        }
+        .meeturo{
+          color: #4C1C00;
+    text-align: center;
+    font-family: League Spartan;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+        }
+    .personal{
+color: #4C1C00;
+font-family: League Spartan;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
       text-align: center;
-      font-family: League Spartan;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      
     }
     
-    @font-face{
-        font-family: 'League Spartan'; /* This is an arbitrary name -- whatever works for you */
-        src: url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-VariableFont_wght.ttf?v=1692417347502');
-             url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-Regular.ttf?v=1692417420012') format('ttf'),
-      }
-      
-      body{
-        font-family: 'League Spartan';
-      }
-    .ute{
-      width: 321px;
-      height: 236px;
-    }
   </style>
   <body>
-    
-    
-<!--     <img src = "https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/WelcomePage.jpg?v=1692414296347"> -->
-    <div class = "welcomeButton">
-      <img class  = "ute" src = "https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/Picture1.png?v=1692413557021">
-      <button class ="btn">Hi!</button>
-              </div>
+    <!--     <img src = "https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/WelcomePage.jpg?v=1692414296347"> -->
+    <div class="welcomePage">
+      <img
+        class="ute"
+        src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/RePro%20initial%20graphic.png?v=1692417794503"
+      />
+
+      <p class="meeturo">Meet <b>REPRO</b>,</p>
+      <p class="personal">
+        Your Personal <b>Reproductive</b> and <b>Pregnancy</b> Companion!
+      </p>
+
+      
+      <form action="dropdown.html">
+        <button class="btn">Hi!</button>
+      </form>
+    </div>
   </body>
 </html>
