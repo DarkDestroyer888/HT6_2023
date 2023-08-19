@@ -22,7 +22,7 @@
               border: 5px solid #ffbcb5;
               border-radius: 34.5px;
       /*         transform: translateX(+100%); */
-              transform: translate(0%, -170%);
+              transform: translate(0%, -380%);
             }
             .imgSubmit{
               width: 50%;
@@ -35,6 +35,8 @@
                     width: 175px;
                     height: 30px;
                     flex-shrink: 0;
+                            transform: translate(0%, -800%);
+
                   }
                   .start{
                     border-radius: 34.5px;
@@ -49,6 +51,16 @@
                     line-height: normal;
                     padding: 8px;
                     margin-left: 30px;
+                    .sign_up {
+              color: #4c1c00;
+      /*         text-align: center; */
+              font-family: League Spartan;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              padding-left: 30px;
+                     transform: translate(0%, -800%);
                   }
                   .reset{
                     border-radius: 34.5px;
@@ -77,9 +89,28 @@
         src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/ba9cf252-aec3-4837-8ce8-e5f89eb6ad32.image.png?v=1692473663411"
       />
       <form class="sign_up">
-        <label for="name"> Temperature according to basal thermometer:</label><br />
-        <input class="inputs" type="text" id="name" name="name" /><br />
+        <label for="temperature"> Temperature according to basal thermometer:</label><br />
+        <input class="inputs" type="text" id="temp" name="temp" /><br />
+      <p>How are you feeling today:</p>
+        <input
+          class="yn"
+          type="radio"
+          id="feelGood"
+          name="feeling"
+          value="good"
+        />
+        <label for="feeling">Great!</label><br />
+        <input
+          class="yn"
+          type="radio"
+          id="feelBad"
+          name="feeling"
+          value="bad"
+        />
+        <label for="feeling">Not so great</label><br />
+      
       </form>
+      
       <form action="result.html">
         <button class="submit">
           <img
