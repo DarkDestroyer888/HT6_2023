@@ -3,70 +3,85 @@
   <head>
     <title></title>
     <style>
+      @font-face{
+            font-family: 'League Spartan'; /* This is an arbitrary name -- whatever works for you */
+            src: url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-VariableFont_wght.ttf?v=1692417347502');
+                 url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-Regular.ttf?v=1692417420012') format('ttf'),
+          }
       .welcomePage {
-          position: relative;
-          width: 100%;
-          max-width: 360px;
-          width: 360px;
-          height: 640px;
-          background-color: #FFBFB7;
-/*           padding: 20px; */
-        }
-    
-      .ute{
-          width: 214px;
-          height: 157px;
-          padding: 20px;
-/*           padding-top: 60px; */
-          margin-left: 50px;
-  margin-right: 50px;
-/*   width: 50%; */
-        }
-      
-      .sign_up{
-        color: #4C1C00;
-text-align: center;
-font-family: League Spartan;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+        position: relative;
+        width: 100%;
+        max-width: 360px;
+        width: 360px;
+        height: 640px;
+        background-color: #ffbfb7;
+        /*           padding: 20px; */
+      }
+
+      .ute {
+        width: 214px;
+        height: 157px;
+        padding: 20px;
+        /*           padding-top: 60px; */
+        margin-left: 50px;
+        margin-right: 50px;
+        /*   width: 50%; */
+      }
+
+      .sign_up {
+        color: #4c1c00;
+/*         text-align: center; */
+        font-family: League Spartan;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-left: 30px;
+      }
+      .inputs{
+        border-radius: 15px;
+border: 4px solid #FFC161;
+background: #FFE3B7;
+        width: 175px;
+height: 30px;
+flex-shrink: 0;
       }
     </style>
   </head>
 
   <body>
     <div class="welcomePage">
-    <img
+      <img
         class="ute"
         src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/RePro%20initial%20graphic.png?v=1692417794503"
       />
-    
-    
-    <form class = "sign_up">
-      <label for="name"> Name:</label><br />
-      <input type="text" id="name" name="name" /><br />
-      <label for="age">Age:</label><br />
-      <input type="text" id="age" name="age" />
-      <p>I drink:</p>
-      <input type="radio" id="drinktrue" name="ifdrink" value="yes" />
-      <label for="drinktrue">Yes</label><br />
-      <input type="radio" id="drinkfalse" name="ifdrink" value="no" />
-      <label for="drinkfalse">No</label><br />
-      <p>I exercise:</p>
-      <input type="radio" id="exercisetrue" name="ifexercise" value="yes" />
-      <label for="exercisetrue">Yes</label><br />
-      <input type="radio" id="exercisefalse" name="ifexercise" value="no" />
-      <label for="exercisefalse">No</label><br />
-      <p>My diet includes:</p>
-      <input type="radio" id="healthydiet" name="diet" value="healthy" />
-      <label for="diet">Healthy diet</label><br />
-      <input type="radio" id="moderatediet" name="diet" value="moderate" />
-      <label for="diet">Moderate diet</label><br />
-      <label for="weight"> My weight (lb):</label><br />
-      <input type="text" id="weight" name="weight" /><br />
-      <input type="submit" value="Submit" />
-    </form>
+
+      <form class="sign_up">
+        <label for="name"> Name:</label><br />
+        <input class = "inputs" type="text" id="name" name="name" /><br />
+        <label for="age">Age:</label><br />
+        <input class = "inputs" type="text" id="age" name="age" />
+        <p>I drink:</p>
+        <input type="radio" id="drinktrue" name="ifdrink" value="yes" />
+        <label for="drinktrue">Yes</label><br />
+        <input type="radio" id="drinkfalse" name="ifdrink" value="no" />
+        <label for="drinkfalse">No</label><br />
+        <p>I exercise:</p>
+        <input type="radio" id="exercisetrue" name="ifexercise" value="yes" />
+        <label for="exercisetrue">Yes</label><br />
+        <input type="radio" id="exercisefalse" name="ifexercise" value="no" />
+        <label for="exercisefalse">No</label><br />
+        <p>My diet includes:</p>
+        <input type="radio" id="healthydiet" name="diet" value="healthy" />
+        <label for="diet">Healthy diet</label><br />
+        <input type="radio" id="moderatediet" name="diet" value="moderate" />
+        <label for="diet">Moderate diet</label><br />
+        <label for="weight"> My weight (lb):</label><br />
+        <input type="text" id="weight" name="weight" /><br />
+        
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit" />
+      </form>
     </div>
   </body>
 </html>
