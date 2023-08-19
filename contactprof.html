@@ -1,58 +1,98 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Flexbox Rows</title>
+    
+    <style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Apply styles to the container */
+    .container {
+        display: flex;
+        flex-direction: column; /* Rows will be stacked vertically */
+        height: 100vh; /* Set container to full viewport height */
+    }
+
+    /* Apply styles to each row */
+    .row {
+        flex: 1; /* Allow rows to expand and fill available space */
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #4C1C00;
+        font-family: League Spartan;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+            text-align: center;
+    }
+
+    /* Apply colors to individual rows */
+    .row:nth-child(1) {
+        background-color: #EBA0A0;
+    }
+
+    .row:nth-child(2) {
+        background-color: #F6B3B3;
+    }
+
+    .row:nth-child(3) {
+        background-color: #F5C2C2;
+    }
+
+    .row:nth-child(4) {
+        background-color: #FFCECE;
+    }
+
+    .row p {
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: normal;
+       text-align: center; /* Add spacing between Row text and additional text */
+    
+    }       
+    .medicalimg {
+          width: 321px;
+          height: 236px;
+          padding: 20px;
+          padding-top: 60px;
+
+    }
+    
+
+    </style>
 </head>
+
+<html></html>
 <body>
     <div class="container">
-        <div class="row">Row 1</div>
-        <div class="row">Row 2</div>
-        <div class="row">Row 3</div>
-        <div class="row">Row 4</div>
+        <div class="row">
+            <b>Dr. Kambili </b>
+            <p>Gynecologist </p>
+            <img class = "medicalimg" src= "https://i.guim.co.uk/img/media/26392d05302e02f7bf4eb143bb84c8097d09144b/446_167_3683_2210/master/3683.jpg?width=1200&quality=85&auto=format&fit=max&s=a52bbe202f57ac0f5ff7f47166906403" >
+            </div>
+        <div class="row">
+            <b>Dr. Jean-Baptiste </b> 
+            <p>Family Doctor</p>
+            </div>
+        <div class="row">
+            <b>Dr. Steven Choi</b>
+            <p>Family Doctor</p>    
+            </div>
+        <div class="row">
+            <b>Blanche Dubois</b>
+            <p>Midwife</p>
+            </div>
     </div>
 </body>
 </html>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Apply styles to the container */
-.container {
-    display: flex;
-    flex-direction: column; /* Rows will be stacked vertically */
-    height: 100vh; /* Set container to full viewport height */
-}
-
-/* Apply styles to each row */
-.row {
-    flex: 1; /* Allow rows to expand and fill available space */
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Apply colors to individual rows */
-.row:nth-child(1) {
-    background-color: #EBA0A0;
-}
-
-.row:nth-child(2) {
-    background-color: #F6B3B3;
-}
-
-.row:nth-child(3) {
-    background-color: #F5C2C2;
-}
-
-.row:nth-child(4) {
-    background-color: #FFCECE;
-}
-</style>
