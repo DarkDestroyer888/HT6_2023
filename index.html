@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      button {
-        border: none;
-        color: white;
-        padding: 800px 360px;
-      }
-    </style>
-    <title></title>
   </head>
+  <style>
+    .welcomeButton{
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+    }
+    .welcomeButton img{
+      width: 100%;
+      height: auto;
+    }
+    .welcomeButton .btn{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
   <body>
-    <button type="button">
-      <img
-        src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/Picture1.png?v=1692413455968"
-      />
-    </button>
+    <div class = "welcomeButton">
+      <img src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/WelcomePage.jpg?v=1692413767110" />
+      <button class ="btn">Button
+      </button>
+    </div> 
   </body>
 </html>
