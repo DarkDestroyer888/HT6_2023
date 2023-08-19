@@ -3,28 +3,98 @@
   <head>
     <title></title>
     <style>
-      @font-face{
-        font-family: 'League Spartan'; /* This is an arbitrary name -- whatever works for you */
-        src: url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-VariableFont_wght.ttf?v=1692417347502');
-             url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-Regular.ttf?v=1692417420012') format('ttf'),
-        }
-      .calendarPage {
-        position: relative;
-        width: 100%;
-        max-width: 360px;
-        width: 360px;
-        height: 640px;
-        background-color: #ffbfb7;
-        /*           padding: 20px; */
-      }
+            @font-face{
+              font-family: 'League Spartan'; /* This is an arbitrary name -- whatever works for you */
+              src: url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-VariableFont_wght.ttf?v=1692417347502');
+                   url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-Regular.ttf?v=1692417420012') format('ttf'),
+              }
+            .calendarPage {
+              position: relative;
+              width: 100%;
+              max-width: 360px;
+              width: 360px;
+              height: 640px;
+              background-color: #ffbfb7;
+              /*           padding: 20px; */
+            }
+            .ute {
+              width: 148px;
+              height: 109px ;
+              padding-top: 20px;
+              /*           padding-top: 60px; */
+              margin-left: 100px;
+              margin-right: 100px;
+              /*   width: 50%; */
+            }
+            .meeturo{
+                color: #4C1C00;
+          text-align: center;
+          font-family: League Spartan;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+              }
+                .personal{
+      color: #4C1C00;
+      font-family: League Spartan;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+            text-align: center;
+          }
 
-      
+                    .btn{
+          /*       customises shape */
+                width: 165px;
+                height: 51px;
+                flex-shrink: 0;
+                border-radius: 34.5px;
+                border: 5px solid #FFC161;
+                background: #FFE3B7;
+                font-size: 2em;
+
+
+          /*       customises font       */
+                color: #D84F4F;
+                text-align: center;
+                font-family: League Spartan;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0;
+                transform: translateX(+55%);
+
+              }
+      .imgg{
+        width: 276px;
+        height: 295px;
+        transform: translate(3.5%, -5%);
+      }
     </style>
   </head>
 
   <body>
-    <div class = "calendarPage">
+    <div class="calendarPage">
+      <img
+        class="ute"
+        src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/RePro%20initial%20graphic.png?v=1692417794503"
+      />
+
+      <p class="meeturo"><b>CALENDAR</b></p>
+      <form action="calendar2.html">
+        <input type="image" id="imgg" src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/be38bf6f-e4f0-475b-be61-e6153c477709.image.png?v=1692482874632">
+      </form>
       
+<!--       <p class="personal">
+        Your Personal <b>Reproductive</b> and <b>Pregnancy</b> Companion!
+      </p> -->
+
+      <form action="introduction.html">
+        <button class="btn">Hi!</button>
+      </form>
     </div>
   </body>
 </html>
