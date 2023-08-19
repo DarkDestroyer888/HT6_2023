@@ -14,26 +14,28 @@
         max-width: 360px;
         width: 360px;
         height: 640px;
-        background-color: #FFBFB7;
+        background-color: #FFBFB5;
         /*           padding: 20px; */
       }
-      .ute {
-        width: 148px;
-        height: 109px ;
-        padding: 20px;
-        /*           padding-top: 60px; */
-        margin-left: 75px;
-        margin-right: 75px;
-        /*   width: 50%; */
-      }
       .bluetooth{
-        background-color: #FFBFB7;
-        border: 5px solid #ffbfb7;
+        background-color: #ffbcb5;
+        border: 5px solid #ffbcb5;
 /*         transform: translateX(+100%); */
         transform: translate(5%, -190%);
       }
       .imgBluetooth{
         width: 50%;
+        height: 50%;
+      }
+      .manualButton{
+        background-color: #ffbfb5;
+        border-radius: 50%;
+        border: 5px solid #ffbfb5;
+/*         transform: translateX(+100%); */
+        transform: translate(0%, -750%);
+      }
+      .imgManualButton{
+        width: 70%;
         height: 50%;
       }
 
@@ -47,9 +49,14 @@
         class="thermoPage"
         src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/a7096057-57d0-4385-9747-0b7c2e030eb8.image.png?v=1692470969835"
       />
-      <form action = "bluetoothConnection">
+      <form action = "bluetoothConnection.html">
         <button class = "bluetooth">
           <img class = "imgBluetooth" src = "https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/e5554404-4043-4029-993e-88c48efc776f.image.png?v=1692471173787">
+        </button>
+      </form>
+      <form action = "manual.html">
+        <button class = "manualButton">
+          <img class = "imgManualButton" src = "https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/82f9e09a-f0e7-4ab3-8157-6b3d01da0e3d.image.png?v=1692472404703">
         </button>
       </form>
     </div>
