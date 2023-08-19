@@ -4,10 +4,10 @@
     <title></title>
     <style>
       @font-face{
-            font-family: 'League Spartan'; /* This is an arbitrary name -- whatever works for you */
-            src: url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-VariableFont_wght.ttf?v=1692417347502');
-                 url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-Regular.ttf?v=1692417420012') format('ttf'),
-          }
+        font-family: 'League Spartan'; /* This is an arbitrary name -- whatever works for you */
+        src: url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-VariableFont_wght.ttf?v=1692417347502');
+             url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-Regular.ttf?v=1692417420012') format('ttf'),
+        }
       .welcomePage {
         position: relative;
         width: 100%;
@@ -48,29 +48,29 @@
       }
       .start{
         border-radius: 34.5px;
-border: 5px solid #F68888;
-background: #EBA0A0;
+        border: 5px solid #F68888;
+        background: #EBA0A0;
         color: #4C1C00;
-text-align: center;
-font-family: League Spartan;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+        text-align: center;
+        font-family: League Spartan;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
         margin: 0px;
         padding: 8px;
       }
       .reset{
-                border-radius: 34.5px;
-border: 5px solid #FFC161;
-background: #FFE3B7;
-text-align: center;
-font-family: League Spartan;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-        margin: 5px;
+        border-radius: 34.5px;
+        border: 5px solid #FFC161;
+        background: #FFE3B7;
+        text-align: center;
+        font-family: League Spartan;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 8px;
       }
       
     </style>
@@ -89,19 +89,19 @@ line-height: normal;
         <label for="age">Age:</label><br />
         <input class = "inputs" type="text" id="age" name="age" />
         <p>Amount of water consumed daily:</p>
-        <input type="radio" id="drinktrue" name="ifdrink" value="yes" />
+        <input class = "yn" type="radio" id="drinktrue" name="ifdrink" value="yes" />
         <label for="drinktrue">Large amounts</label><br />
-        <input type="radio" id="drinkfalse" name="ifdrink" value="no" />
+        <input class = "yn" type="radio" id="drinkfalse" name="ifdrink" value="no" />
         <label for="drinkfalse">Small amounts</label><br />
         <p>Amount of exercise daily:</p>
-        <input type="radio" id="exercisetrue" name="ifexercise" value="yes" />
+        <input class = "yn" type="radio" id="exercisetrue" name="ifexercise" value="yes" />
         <label for="exercisetrue">Large amounts</label><br />
-        <input type="radio" id="exercisefalse" name="ifexercise" value="no" />
+        <input class = "yn" type="radio" id="exercisefalse" name="ifexercise" value="no" />
         <label for="exercisefalse">Small amounts</label><br />
         <p>My diet would be considered:</p>
-        <input type="radio" id="healthydiet" name="diet" value="healthy" />
+        <input class = "yn" type="radio" id="healthydiet" name="diet" value="healthy" />
         <label for="diet">Healthy diet</label><br />
-        <input type="radio" id="moderatediet" name="diet" value="poop" />
+        <input class = "yn" type="radio" id="moderatediet" name="diet" value="poor" />
         <label for="diet">Poor diet</label><br />
         <br>
         <label for="weight"> My weight (lbs):</label><br />
