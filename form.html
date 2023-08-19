@@ -3,85 +3,84 @@
   <head>
     <title></title>
     <style>
-      @font-face{
-        font-family: 'League Spartan'; /* This is an arbitrary name -- whatever works for you */
-        src: url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-VariableFont_wght.ttf?v=1692417347502');
-             url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-Regular.ttf?v=1692417420012') format('ttf'),
-        }
-      .welcomePage {
-        position: relative;
-        width: 100%;
-        max-width: 360px;
-        width: 360px;
-        height: 640px;
-        background-color: #ffbfb7;
-        /*           padding: 20px; */
-      }
+            @font-face{
+              font-family: 'League Spartan'; /* This is an arbitrary name -- whatever works for you */
+              src: url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-VariableFont_wght.ttf?v=1692417347502');
+                   url('https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/LeagueSpartan-Regular.ttf?v=1692417420012') format('ttf'),
+              }
+            .welcomePage {
+              position: relative;
+              width: 100%;
+              max-width: 360px;
+              width: 360px;
+              height: 640px;
+              background-color: #ffbfb7;
+              /*           padding: 20px; */
+            }
 
-      .ute {
-        width: 148px;
-        height: 109px ;
-        padding: 20px;
-        /*           padding-top: 60px; */
-        margin-left: 75px;
-        margin-right: 75px;
-        /*   width: 50%; */
-      }
+            .ute {
+              width: 148px;
+              height: 109px ;
+              padding: 20px;
+              /*           padding-top: 60px; */
+              margin-left: 75px;
+              margin-right: 75px;
+              /*   width: 50%; */
+            }
 
-      .sign_up {
-        color: #4c1c00;
-/*         text-align: center; */
-        font-family: League Spartan;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        padding-left: 30px;
-      }
-      .inputs{
-        border-radius: 15px;
-        border: 4px solid #FFC161;
-        background: #FFE3B7;
-        width: 175px;
-        height: 30px;
-        flex-shrink: 0;
-      }
-      .start{
-        border-radius: 34.5px;
-        border: 5px solid #F68888;
-        background: #EBA0A0;
-        color: #4C1C00;
-        text-align: center;
-        font-family: League Spartan;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        padding: 8px;
-        margin-left: 30px;
-      }
-      .reset{
-        border-radius: 34.5px;
-        border: 5px solid #FFC161;
-        background: #FFE3B7;
-        text-align: center;
-        font-family: League Spartan;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        padding: 8px;
-      }
-      .yn{
-/*         border-radius: 15px; */
-        border: 4px solid #FFC161;
-        background: #FFE3B7;
-      }
-      
-      .start:hover {
-          background-color: #f68888;
-        }
-      
+            .sign_up {
+              color: #4c1c00;
+      /*         text-align: center; */
+              font-family: League Spartan;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              padding-left: 30px;
+            }
+            .inputs{
+              border-radius: 15px;
+              border: 4px solid #FFC161;
+              background: #FFE3B7;
+              width: 175px;
+              height: 30px;
+              flex-shrink: 0;
+            }
+            .start{
+              border-radius: 34.5px;
+              border: 5px solid #F68888;
+              background: #EBA0A0;
+              color: #4C1C00;
+              text-align: center;
+              font-family: League Spartan;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              padding: 8px;
+              margin-left: 30px;
+            }
+            .reset{
+              border-radius: 34.5px;
+              border: 5px solid #FFC161;
+              background: #FFE3B7;
+              text-align: center;
+              font-family: League Spartan;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              padding: 8px;
+            }
+            .yn{
+      /*         border-radius: 15px; */
+              border: 4px solid #FFC161;
+              background: #FFE3B7;
+            }
+
+            .start:hover {
+                background-color: #f68888;
+              }
     </style>
   </head>
 
@@ -94,37 +93,94 @@
 
       <form class="sign_up">
         <label for="name"> Name:</label><br />
-        <input class = "inputs" type="text" id="name" name="name" /><br />
+        <input class="inputs" type="text" id="name" name="name" /><br />
         <label for="age">Age:</label><br />
-        <input class = "inputs" type="text" id="age" name="age" />
+        <input class="inputs" type="text" id="age" name="age" />
         <p>Amount of water consumed daily:</p>
-        <input class = "yn" type="radio" id="drinktrue" name="ifdrink" value="yes" />
+        <input
+          class="yn"
+          type="radio"
+          id="drinktrue"
+          name="ifdrink"
+          value="yes"
+        />
         <label for="drinktrue">Large amounts</label><br />
-        <input class = "yn" type="radio" id="drinkfalse" name="ifdrink" value="no" />
+        <input
+          class="yn"
+          type="radio"
+          id="drinkfalse"
+          name="ifdrink"
+          value="no"
+        />
         <label for="drinkfalse">Small amounts</label><br />
         <p>Amount of exercise daily:</p>
-        <input class = "yn" type="radio" id="exercisetrue" name="ifexercise" value="yes" />
+        <input
+          class="yn"
+          type="radio"
+          id="exercisetrue"
+          name="ifexercise"
+          value="yes"
+        />
         <label for="exercisetrue">Large amounts</label><br />
-        <input class = "yn" type="radio" id="exercisefalse" name="ifexercise" value="no" />
+        <input
+          class="yn"
+          type="radio"
+          id="exercisefalse"
+          name="ifexercise"
+          value="no"
+        />
         <label for="exercisefalse">Small amounts</label><br />
         <p>My diet would be considered:</p>
-        <input class = "yn" type="radio" id="healthydiet" name="diet" value="healthy" />
+        <input
+          class="yn"
+          type="radio"
+          id="healthydiet"
+          name="diet"
+          value="healthy"
+        />
         <label for="diet">Healthy diet</label><br />
-        <input class = "yn" type="radio" id="moderatediet" name="diet" value="poor" />
+        <input
+          class="yn"
+          type="radio"
+          id="moderatediet"
+          name="diet"
+          value="poor"
+        />
         <label for="diet">Poor diet</label><br />
-        <br>
+        <br />
         <label for="weight"> My weight (lbs):</label><br />
-        <input class = "inputs" type="text" id="weight" name="weight" /><br />
-        <br>
-<!--         <form action = "main.html">
+        <input class="inputs" type="text" id="weight" name="weight" /><br />
+        <br />
+        <!--         <form action = "main.html">
           <button class = "start" type="submit" value="Get Started!" />
 <!--           <input class = "reset" type="reset" value="Reset"> -->
-        </form>
-        
-        <form action="main.html">
-        <button class="start">Get Started!</button>
       </form>
 
+      <form action="main.html">
+        <button class="start">Get Started!</button>
+      </form>
+      <script>
+        document
+          .getElementById("myForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const age = document.getElementById("age").value;
+
+            const userData = {
+              name: name,
+              email: email,
+              age: age,
+            };
+
+            // Store data in local storage
+            localStorage.setItem("userData", JSON.stringify(userData));
+
+            console.log("Data stored in local storage.");
+          });
+      </script>
     </div>
   </body>
 </html>
