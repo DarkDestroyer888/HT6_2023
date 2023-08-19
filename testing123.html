@@ -1,0 +1,27 @@
+<form id="sign_up">
+  <input type="text" id="name" placeholder="Name">
+  <input type="number" id="age" placeholder="Age">
+  <button type="submit">Sign Up</button>
+</form>
+
+<script>
+  document.getElementById("sign_up").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const age = document.getElementById("age").value;
+
+    const userData = {
+      name: name,
+      age: age,
+    };
+
+    localStorage.setItem("userData", JSON.stringify(userData));
+
+    // Retrieving data from local storage
+    const storedData = localStorage.getItem("userData");
+    const parsedData = JSON.parse(storedData);
+    console.log(parsedData.name); 
+    console.log("Data stored in local storage.");
+  });
+</script>

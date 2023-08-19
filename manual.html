@@ -146,12 +146,12 @@
             }
 
             .ute {
-              width: 148px;
+              width: 140px;
               height: 109px ;
               padding: 20px;
               /*           padding-top: 60px; */
-              margin-left: 80px;
-              margin-right: 80px;
+              margin-left: 60px;
+              margin-right: 30px;
               /*   width: 50%; */
             }
 
@@ -195,21 +195,20 @@
         border: 5px solid #ffbfb7;
         transform: translate(7%, 0%);
       }
-      .imgBackToMenu{
-        width: 20px;
-        height: 30px;
-      }
 
     </style>
   </head>
 
   <body>
     <div class="welcomePage">
-      <img
-        class="ute"
-        src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/RePro%20initial%20graphic.png?v=1692417794503"
-      />
-
+      <form action = "main.html">
+        <button class = "backToMenu">
+          <img
+          class="ute"
+          src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/RePro%20initial%20graphic.png?v=1692417794503"
+          />
+        </button>
+      </form>
       <form class="sign_up">
         <label for="temp"> Temperature according to Basal Thermometer:</label><br />
         <input class="inputs" type="text" id="temp" name="temp" /><br />
@@ -221,12 +220,6 @@
       <form action="main.html">
         <br>
         <button class="start">Submit</button>
-      </form>
-      
-      <form>
-        <button class ="backToMenu" >
-          <img = class = "imgBackToMenu" src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/Picture1.png?v=1692413557021">
-        </button>
       </form>
     </div>
   </body>
