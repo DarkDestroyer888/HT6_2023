@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flexbox Rows</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">Row 1</div>
+        <div class="row">Row 2</div>
+        <div class="row">Row 3</div>
+        <div class="row">Row 4</div>
+    </div>
+</body>
+</html>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the container */
+.container {
+    display: flex;
+    flex-direction: column; /* Rows will be stacked vertically */
+    height: 100vh; /* Set container to full viewport height */
+}
+
+/* Apply styles to each row */
+.row {
+    flex: 1; /* Allow rows to expand and fill available space */
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Apply colors to individual rows */
+.row:nth-child(1) {
+    background-color: #EBA0A0;
+}
+
+.row:nth-child(2) {
+    background-color: #F6B3B3;
+}
+
+.row:nth-child(3) {
+    background-color: #F5C2C2;
+}
+
+.row:nth-child(4) {
+    background-color: #FFCECE;
+}
+</style>
