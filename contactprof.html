@@ -7,136 +7,138 @@
     <title>Flexbox Rows</title>
 
     <style>
-
+/*       .contactprof{
+        position: relative;
+          width: 100%;
+          max-width: 360px;
+          width: 360px;
+          height: 640px;
+          background-color: #FFBFB7;
+      } */
       * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
 
       /* Apply styles to the container */
       .container {
-          display: flex;
-          flex-direction: column; /* Rows will be stacked vertically */
-          height: 100vh; /* Set container to full viewport height */
+        display: flex;
+        flex-direction: column; /* Rows will be stacked vertically */
+        height: 100vh; /* Set container to full viewport height */
       }
 
       /* Apply styles to each row */
       .row {
-          flex: 1; /* Allow rows to expand and fill available space */
-          border: 1px solid black;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: #4C1C00;
-          font-family: League Spartan;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-              text-align: center;
+        flex: 1; /* Allow rows to expand and fill available space */
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #4c1c00;
+        font-family: League Spartan;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
       }
 
       /* Apply colors to individual rows */
       .row:nth-child(1) {
-          background-color: #EBA0A0;
+        background-color: #eba0a0;
       }
 
       .row:nth-child(2) {
-          background-color: #F6B3B3;
+        background-color: #f6b3b3;
       }
 
       .row:nth-child(3) {
-          background-color: #F5C2C2;
+        background-color: #f5c2c2;
       }
 
       .row:nth-child(4) {
-          background-color: #FFCECE;
+        background-color: #ffcece;
       }
 
       .row p {
-      margin-top: 50px;
-      font-size: 18px;
-      line-height: normal;
-         text-align: center; /* Add spacing between Row text and additional text */
-
+        margin-top: 50px;
+        font-size: 18px;
+        line-height: normal;
+        text-align: center; /* Add spacing between Row text and additional text */
       }
       .medicalimg {
-            width: 200px;
-            height: 236px;
-            padding: 20px;
-            padding-top: 60px;
-            margin-left: 60px;
-
+        width: 200px;
+        height: 236px;
+        padding: 20px;
+        padding-top: 60px;
+        margin-left: 60px;
       }
 
-        .doctor1 {
-          width: 200px;
-            height: 236px;
-            padding: 20px;
-            padding-top: 60px;
-            margin-left: 60px;
-        }
+      .doctor1 {
+        width: 200px;
+        height: 236px;
+        padding: 20px;
+        padding-top: 60px;
+        margin-left: 60px;
+      }
 
-        .doctor1measure {
-          background-color: #EBA0A0;
-          border-radius: 34.5px;
-          border: 5px solid #EBA0A0;
-          transform: translate(7%, 0%)
-        }
-        .doctor2 {
-          width: 200px;
-            height: 236px;
-            padding: 20px;
-            padding-top: 60px;
-            margin-left: 60px;
-        }
+      .doctor1measure {
+        background-color: #eba0a0;
+        border-radius: 34.5px;
+        border: 5px solid #eba0a0;
+        transform: translate(7%, 0%);
+      }
+      .doctor2 {
+        width: 200px;
+        height: 236px;
+        padding: 20px;
+        padding-top: 60px;
+        margin-left: 60px;
+      }
 
-          
+      .doctor3 {
+        width: 200px;
+        height: 236px;
+        padding: 20px;
+        padding-top: 60px;
+        margin-left: 60px;
+      }
 
-        .doctor3 {
-          width: 200px;
-          height: 236px;
-          padding: 20px;
-          padding-top: 60px;
-          margin-left: 60px;
-        }
-          
-        
-    
-
-        .doctor4{
-          width: 200px;
-            height: 236px;
-            padding: 20px;
-            padding-top: 60px;
-            margin-left: 100px;
-        }
-      .meeturo{
-            color: #4C1C00;
-      text-align: center;
-      font-family: League Spartan;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      margin-top: 25px;
-      margin-bottom: 25px;
-          }
-        body{
-          background-color: #FFBFB7;
-        }
+      .doctor4 {
+        width: 200px;
+        height: 236px;
+        padding: 20px;
+        padding-top: 60px;
+        margin-left: 100px;
+      }
+      .meeturo {
+        color: #4c1c00;
+        text-align: center;
+        font-family: League Spartan;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+      body {
+        background-color: #ffbfb7;
+      }
     </style>
   </head>
 
   <html>
     <body>
+      <div class = "contactprof">
+        
       <p class="meeturo"><b>Connect with Professionals</b></p>
       <div class="container">
         <div class="row">
           <b>Dr. Kambili </b>
           <p>Gynecologist</p>
-          <form action="form.html">
+          <form action="chat.html">
             <button class="doctor1measure">
               <img
                 class="doctor1"
@@ -148,27 +150,19 @@
         <div class="row">
           <b>Dr. Jean-Baptiste </b>
           <p>Family Doctor</p>
-          <form action="form.html">
-            <button class="doctor2measure">
-              <img
-                class="doctor2"
-                src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/image.png?v=1692471514670"
-              />
-            </button>
-          </form>
+            <img
+              class="doctor2"
+              src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/image.png?v=1692471514670"
+            />
         </div>
         <div class="row">
           <b>Dr. Steven Choi</b>
           <p>Family Doctor</p>
-          <form action="form.html">
-            <button class="doctor3measure">
-              <img
-        
-                class="doctor3"
-                src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/890e093c-67c2-4d7a-982a-f530c3377eb9.image.png?v=1692471629569"
-              />
-            </button>
-          </form>
+
+          <img
+            class="doctor3"
+            src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/890e093c-67c2-4d7a-982a-f530c3377eb9.image.png?v=1692471629569"
+          />
         </div>
         <div class="row">
           <b>Blanche Dubois</b>
@@ -178,6 +172,8 @@
             src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/93e08701-3490-4a73-9cb5-454f937dfb9a.image.png?v=1692471847847"
           />
         </div>
+      </div>
+        
       </div>
     </body>
   </html>
@@ -192,7 +188,7 @@
   </body>
 </html>
 -->
-  <html>
+<!--   <html>
     <head> </head>
     <style>
       #myImage {
@@ -204,4 +200,4 @@
       <!--     <img src = "https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/WelcomePage.jpg?v=1692414296347"> -->
     </body>
   </html>
-</html>
+</html> -->
