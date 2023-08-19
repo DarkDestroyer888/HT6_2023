@@ -2,10 +2,39 @@
 <html>
   <head>
     <title></title>
+    <style>
+      .welcomePage {
+          position: relative;
+          width: 100%;
+          max-width: 360px;
+          width: 360px;
+          height: 640px;
+          background-color: #FFBFB7;
+/*           padding: 20px; */
+        }
+    
+      .ute{
+          width: 214px;
+          height: 157px;
+          padding: 20px;
+/*           padding-top: 60px; */
+        }
+      
+      .sign_up{
+        
+      }
+    </style>
   </head>
 
   <body>
-    <form>
+    <div class="welcomePage">
+    <img
+        class="ute"
+        src="https://cdn.glitch.global/2c2072d5-bb14-4223-a12d-a3062d89971e/RePro%20initial%20graphic.png?v=1692417794503"
+      />
+    
+    
+    <form class = "sign_up">
       <label for="name"> Name:</label><br />
       <input type="text" id="name" name="name" /><br />
       <label for="age">Age:</label><br />
@@ -29,5 +58,6 @@
       <input type="text" id="weight" name="weight" /><br />
       <input type="submit" value="Submit" />
     </form>
+    </div>
   </body>
 </html>
